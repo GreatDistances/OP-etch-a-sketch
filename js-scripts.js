@@ -2,9 +2,15 @@ const gridContainer = document.querySelector(".gridContainer");
 const gridSetter = document.querySelector(".gridSetter");
 
 const gridBtn = document.createElement("button");
+gridBtn.classList.add("btn-resize");
+
+const gridResetBtn = document.createElement("button");
+gridResetBtn.classList.add("btn-reset");
+
 //const clearGridBtn = document.createElement("button");
 
 gridSetter.append(gridBtn);
+gridSetter.append(gridResetBtn);
 //gridSetter.append(clearGridBtn);
 
 let gridWidth = 16;
@@ -45,6 +51,11 @@ gridBtn.addEventListener("click", () => {
     gridWidth = prompt("Enter a new grid size between 4 - 100");
     if (gridWidth >= 4 && gridWidth <= 100) break;
   }
+  buildGrid(gridWidth);
+});
+
+gridResetBtn.textContent = "Reset the grid?"
+gridResetBtn.addEventListener("click", () => {
   buildGrid(gridWidth);
 });
 

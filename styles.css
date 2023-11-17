@@ -1,8 +1,32 @@
-* {
 
+* {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.gridSetter {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.btn-resize {
+    padding: 15px;
+   border: none;
+   background-color: skyblue;
+    border-radius: 5px;
+}
+
+.btn-reset {
+    padding: 15px;
+    border: none;
+    background-color: palegoldenrod;
+    border-radius: 5px;
 }
 
 .gridContainer {
+    margin: 0 auto;
     width: 800px;
     height: 800px;
     border: 5px solid black;
@@ -15,3 +39,4 @@
     background-color: rgb(120, 120, 120);
     border: 1px solid rgb(133, 133, 133);
 }
+
