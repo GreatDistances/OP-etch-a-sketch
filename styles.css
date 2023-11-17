@@ -2,9 +2,9 @@
 
 }
 
-.container {
-    width: 400px;
-    height: 400px;
+.gridContainer {
+    width: 800px;
+    height: 800px;
     border: 5px solid black;
     display: flex;
     flex-wrap: wrap;
@@ -12,12 +12,6 @@
 
 .etchDiv {
     box-sizing: border-box;
-    height: 25px;
-    width: 25px;
-    background-color: grey;
-    border: 1px solid lightgrey;
-}
-
-.etchDiv-hover {
-    background-color: red;
+    background-color: rgb(120, 120, 120);
+    border: 1px solid rgb(133, 133, 133);
 }
